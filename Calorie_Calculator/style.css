@@ -1,0 +1,27 @@
+.inputs {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+
+  width: 200px;
+}
+#weight {
+  width: 30px;
+}
+#height {
+  width: 30px;
+}
+#age {
+  width: 30px;
+}
+#enter {
+  background-color: gainsboro;
+  border: 0;
+  height: 30px;
+  border-radius: 7px;
+}
+#enter:hover {
+  background-color: lightgray;
+}
