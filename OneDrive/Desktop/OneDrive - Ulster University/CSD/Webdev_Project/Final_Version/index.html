@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Puzzle - Intro</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="jQuery.js"></script>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="jumping-word">Wordle!</div>
+        <br />
+        <div class="titleText">Daily Challenge</div>
+        <br />
+        <div class="testyourword">Test your Wordiness!</div>
+        <div class="emailForm">
+            <form>
+                <label for="Email">Get emailed your stats! </label>
+                <input type="email" placeholder="Enter Email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"  required>
+                </form>
+            </div>    
+        
+
+        <div class="stages">
+            <button id="stage1" gameDiff = "easy" onclick="startStage(1)">Easy</button>
+            <button id="stage2" gameDiff = "medium" onclick="startStage(2)">Medium</button>
+            <button id="stage3" gameDiff = "hard" onclick="startStage(3)">Hard</button>
+        </div>
+
+        <div class="leaderboard">
+            <h2>User Statistics!</h2>
+            <p>Games Played: <span id="games-played">0</span></p>
+            <p>Games Won: <span id="games-won">0</span></p>
+            <p>Win Percentage: <span id="win-percentage">0%</span></p>
+            <p>Current Streak: <span id="current-streak">0</span></p>
+            <p>Longest Streak: <span id="longest-streak">0</span></p>
+            
+                </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,375 @@
+/* GLOBAL STYLES */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* animation keyframes */
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.jumping-word {
+  display: inline-block;
+  animation: jump 3s ease-in-out infinite;
+  color: #2c323d;
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* HOMEPAGE STYLES */
+
+.letters {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid rgb(47, 76, 93);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border-radius: 4px;
+  color: black;
+  margin-right: 1.5px;
+  margin-bottom: 1.5px;
+  margin-top: 1.5px;
+  margin-left: 1.5px;
+  background-color: rgba(145, 152, 179, 0.345);
+  vertical-align: middle;
+}
+
+.maincontainer {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  color: #291528;
+  background-image: url('images/background.png');
+  background-repeat: repeat;
+  background-size: 150px 150px;
+  
+}
+
+.stages {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transition: background-color 1s ease-in-out;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.stages button {
+  display: block;
+  margin: 15px 15px;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: #56688a;
+  color: white;
+  cursor: pointer;
+  transition: opacity 2s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.stages button:hover {
+  background-color: #33466b;
+}
+
+.leaderboard {
+  margin-top: 30px;
+  text-align: center;
+}
+
+
+.titleText {
+  display: inline-block;
+  color: #151c27;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* GAME PAGE STYLES */
+
+.hints {
+  width: 3rem;
+  height: 3rem;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border-radius: 3px;
+  color: black;
+  margin-right: 3px;
+  margin-bottom: 5px;
+  background-color: transparent;
+  vertical-align: middle;
+}
+
+#score {
+  top: 640px;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.container {
+  width: 19rem;
+  height: 30rem;
+  margin: 10px auto;
+  align-items: center;
+  text-align: center;
+ 
+}
+
+.options {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  justify-content: center;
+}
+.options button {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: #56688a;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+  transition: background-color 1s ease-in-out;
+}
+
+.options button:hover {
+  background-color: #33466b;
+}
+
+.game-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  min-height: 60vh;
+  max-width: 600px;
+  width: 90%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  margin: 20px auto;
+  margin-bottom: 150px;
+  background-image: url('images/background.png');
+  background-repeat: repeat;
+  background-size: 150px 150px;
+}
+
+.instructions {
+  text-align: center;
+}
+
+.instructionsTitle {
+  max-height: 30px;
+  min-width: 120px;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+#startButton {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: #56688a;
+  color: white;
+  cursor: pointer;
+  transition: opacity 2s ease-in-out;
+  transition: background-color 1s ease-in-out;
+  margin-bottom: 18px;
+  margin-top: 25px;
+}
+
+#startButton:hover {
+  background-color: #33466b;
+}
+/*Settings icon*/
+.settings-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.settings-icon:hover {
+  transform: rotate(20deg);
+}
+/*Settings popup box*/
+.popup {
+  width: 350px;
+  background: #ffffff;
+  border-radius: 12px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 20px 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+  z-index: 999;
+}
+
+.open-popup {
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.popup h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 15px 0;
+  color: #2c323d;
+}
+
+.popup p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #444;
+}
+
+.popup button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  background: #56688a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.popup button:hover {
+  background-color: #33466b;
+}
+
+/* Dark mode support */
+.dark-mode .game-container {
+  background-color: #222;
+  background-image: url('images/backgrounddark.png');
+  background-repeat: repeat;
+  background-size: 150px 150px;
+
+}
+.dark-mode .popup {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .letters{
+  background-color: #2c2c2c;
+  color: #fff;
+}
+.dark-mode {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode .maincontainer {
+  background-color: #2c2c2c;
+}
+
+.dark-mode .stages button,
+.dark-mode .options button {
+  background-color: #444;
+  border-color: white;
+}
+
+.dark-mode .options button:hover {
+  background-color: #838892;
+}
+
+
+.dark-mode .jumping-word {
+  color: white;
+}
+
+.dark-mode #startButton {
+background-color: #444;
+border: 1px solid rgb(255, 255, 255);
+}
+
+.dark-mode #startButton:hover {
+  background-color: #838892;
+}
+
+.dark-mode .letters {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.dark-mode .popup h2 {
+  color: white;
+
+}
+
+.dark-mode .popup P {
+  color: white;
+  
+}
+
+.dark-mode .settingsButtons button {
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #444;
+}
+
+.dark-mode .settingsButtons button:hover {
+  background-color: #838892;
+}
+
+.emailForm {
+  margin: 20px 0;
+}
