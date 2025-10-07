@@ -1,0 +1,23 @@
+#clock {
+  font-family: LCD;
+  color: wheat;
+}
+.nums {
+  width: 80px;
+}
+body {
+  background-color: black;
+}
+#p2 {
+  margin-left: 30px;
+}
+#p4 {
+  margin-left: 30px;
+}
+#p6 {
+  margin-left: 30px;
+}
+div {
+  margin: auto;
+  margin: 10%;
+}
