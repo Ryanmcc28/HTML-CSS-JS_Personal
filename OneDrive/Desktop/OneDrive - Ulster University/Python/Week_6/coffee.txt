@@ -1,2 +1,0 @@
-java,medium,brown,50
-colombian,dark,black,100
