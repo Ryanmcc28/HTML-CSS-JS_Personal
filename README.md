@@ -1,2 +1,1 @@
-Small Wev Development projects
-Group project included
+Small Wev Development project i made when learning HTML/CSS/JavaScript
